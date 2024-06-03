@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Quarteto</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="quarteto_script.js"></script>
+    </head>
+    <body>
+        <div id="button-container">
+            <button onclick="window.location.href='termo.html'">Termo</button>
+            <button onclick="window.location.href='dueto.html'">Dueto</button>
+            <button onclick="window.location.href='quarteto.html'">Quarteto</button>
+            <button id="openOverlayBtn">Como Jogar?</button>
+        </div>
+
+        <h1 id="titulo">Quarteto</h1>
+        <hr>
+        <br>
+        <div id="jogo">
+            <div class="game" id="jogo1"></div>
+            <div class="game" id="jogo2"></div>
+            <div class="game" id="jogo3"></div>
+            <div class="game" id="jogo4"></div>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <img src="como_jogar.png" alt="Como Jogar">
+            </div>
+        </div>
+
+        <br>
+        <h1 id="resposta"></h1>
+        <h1 id="mensagem"></h1>
+        <h1 id="palavrasCorretas"></h1>
+
+
+        <button id="toggleThemeBtn" class="theme-toggle-btn">Alternar Tema</button>
+    </body>
+</html>
